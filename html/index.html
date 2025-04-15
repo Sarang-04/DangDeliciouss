@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DangDeliciouss</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/index.css">
+
+  <style>
+    /* Fix for different browser alignments */
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-center-text" style="color: rgb(249, 196, 116); font-weight: bold; font-size: 50px; font-family: 'Great Vibes', cursive;">
+      DangDeliciouss
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Recipe</a>
+      <a href="#">About</a>
+    </div>
+  </nav>
+  
+
+  <div class="logo">
+    <img src="./images/LOGO DANGD - Copy.png" alt="logo" id="site-logo">
+  </div>
+  
+  
+  <h1 class="hero-text">where every bite <br> <span>tells a story</span></h1>
+  
+  <!--<button class="explore-btn">Explore</button>-->
+
+  <!--<div class="recipe-slider">
+    <div class="recipe-card">
+      <img src="./images/recipe1.jpg" alt="Recipe 1">
+      <h3>Delicious Dish 1</h3>
+      <p>Short description of the recipe...</p>
+    </div>
+    <div class="recipe-card">
+      <img src="./images/recipe2.jpg" alt="Recipe 2">
+      <h3>Delicious Dish 2</h3>
+      <p>Short description of the recipe...</p>
+    </div>
+  </div>
+
+  <div class="categories">
+    <div class="category-box">Vegetarian</div>
+    <div class="category-box">Desserts</div>
+    <div class="category-box">Quick Meals</div>
+  </div>-->
+  <script src="js/index.js"></script>
+  <script type="module" src="js/login.js"></script>
+
+
+  <div class="footer"></div>
+  <div class="rect-box">
+    <div class="rect1" style="position: absolute; top: 150px; width: 1300px;
+     height: 550px; z-index: -1; left: 195px; border-bottom-left-radius:40px; 
+     border-bottom-right-radius:0px; border-top-left-radius: 0px; border-top-right-radius: 40px;"></div>
+     <h1 class="recipe-title">Latest Recipes</h1>
+     <h1 class="rec-2title">Hungry..?</h1>
+     <h1 class="dish1"></h1>  <!-- This will be updated dynamically -->
+
+     <a href="recipes.html" class="dive-in-btn">Dive in</a>
+     <a href="all-recipes.html" class="all-rec-btn"><i class="fas fa-utensils"></i> View All Recipes</a>
+     <div class="recipe-latest1"></div>
+     <div class="recipe-latest2"></div>
+     
+     <!-- Next & Prev Buttons -->
+     <div class="next-btn" style="position: absolute; top: 43%; left: 1430px; 
+     transform: translateY(-50%); writing-mode: vertical-rl; text-orientation: upright; 
+     font-size: 15px; color: rgb(60,34,21); cursor: pointer;">next</div>
+     
+     <div class="prev-btn" style="position: absolute; top: 43%; right: 1430px; 
+     transform: translateY(-50%); writing-mode: vertical-rl; text-orientation: upright; 
+     font-size: 15px; color: rgb(60,34,21); cursor: pointer;">prev</div>
+
+     
+    </div>
+    
+
+  </div>
+
+ <!--circles category--> 
+<div class="rect-box2"></div>
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; max-width: 100%; gap: 40px; flex-wrap: wrap; margin-top: 1100px;">
+  <div class="food-card" style="background-image: url('./images/photo_2025-03-05_20-44-18.jpg');">
+    <p>NON VEG</p>
+  </div>
+  <div class="food-card" style="background-image: url('./images/photo_2025-03-05_20-44-20.jpg');">
+    <p>VEG</p>
+  </div>
+  <div class="food-card" style="background-image: url('./images/photo_2025-03-05_20-44-21.jpg');">
+    <p>STREET FOODS</p>
+  </div>
+  <div class="food-card" style="background-image: url('./images/photo_2025-03-05_20-44-22.jpg');">
+    <p>SWEETS</p>
+  </div>
+  <div class="food-card" style="background-image: url('./images/photo_2025-03-05_20-44-23.jpg');">
+    <p>BIRIYANI</p>
+  </div>
+</div>
+
+<!-- Admin Login Modal -->
+<div id="admin-login-modal" style="display:none;" class="modal-overlay">
+  <div class="modal-content" style="width: 550px; height: 250px; font-size: 18px;">
+    <span id="close-modal" class="close-btn" style="right: 10px; top: 10px; font-size: 25px;">&times;</span>
+    <h3 style="font-size: 35px;color: #000; position: relative; top: -55px;">Admin Login</h3>
+    <form id="admin-login-form">
+      <input
+        type="email"
+        id="admin-email"
+        placeholder="Admin Email"
+        required
+        style="width: 300px; height: 30px; font-size: 18px; position: relative; top: -35px;"
+      >
+      <br><br>
+    
+      <input
+        type="password"
+        id="admin-password"
+        placeholder="Password"
+        required
+        style="width: 300px; height: 30px; font-size: 18px; position: relative; top: -25px;"
+      >
+      <br><br>
+    
+      <button
+        type="submit"
+        id="admin-login-button"
+        style="width: 150px; height: 40px; font-size: 18px; border-radius: 10px; position: relative; top: -23px;"
+      >
+        Login
+      </button>
+    </form>
+    
+    <span style="position: absolute; right: 15px; top: 5px; font-size: 45px; cursor: pointer;color: black;" onclick="document.getElementById('admin-login-modal').style.display='none'">&times;</span>
+    
+    
+  </div>
+</div>
+</div>
+</body>
+</html>
