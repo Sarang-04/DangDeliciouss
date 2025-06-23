@@ -62,3 +62,86 @@ body {
     color: rgb(114, 95, 67);
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
+
+
+/* Modal Overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(250, 243, 224);
+  padding: 30px;
+  border-radius: 8px;
+  z-index: 1000;
+  width: 900px;
+  height: 600px;
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Close Button */
+.close {
+  align-self: flex-end;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Form Fields */
+#recipeForm label {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#recipeForm input[type="text"],
+#recipeForm textarea,
+#recipeForm input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#recipeForm button[type="submit"] {
+  position: absolute;
+  bottom: -1%;
+  right: 50%;
+  transform: translateX(50%);
+  padding: 15px 30px;
+  background-color: rgb(98,56,35);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Image Preview */
+#imagePreviewContainer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#imagePreview {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

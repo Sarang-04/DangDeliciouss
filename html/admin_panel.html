@@ -1,42 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel</title>
-    <link rel="stylesheet" href="css/admin_panel.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="css/admin_panel.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body style="background-color: rgb(250, 243, 224);">
-    <nav style="background-color: rgb(98,56,35); display: flex; justify-content: center; align-items: center; width: 100%; height: 100px; margin: 0 auto; position: absolute; top: 0; left: 50%; transform: translateX(-50%);border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; border-bottom-right-radius: 40px;">
-        <h1 style="color: rgb(249, 196, 116); font-size: 55px; font-family: 'Great Vibes', cursive;">
-            DangDeliciouss
-          </h1>
-          
-    </nav>
-    <link rel="stylesheet" href="css/admin_panel.css">
-    <div class="cards-container">
-        <div class="card card1 tooltip">
-          
-          <div class="card-content">
-            <i class="fas fa-utensils icon"></i>
-            <p style="font-size: 20px; font-weight: bold; color: rgb(250, 243, 224); font-family: 'Cinzel', serif;">Post a Recipe</p>
-          </div>
-        </div>
-      
-        <div class="card card2 tooltip">
-          
-          <div class="card-content">
-            <i class="fas fa-cog icon"></i>
-            <p style="font-size: 20px; font-weight: bold; color: rgb(250, 243, 224); font-family: 'Cinzel', serif;">Manage Recipes </p>
-          </div>
-        </div>
-      </div>
-      
-    
+  <nav style="background-color: rgb(98,56,35); display: flex; justify-content: center; align-items: center; width: 100%; height: 100px; margin: 0 auto; position: absolute; top: 0; left: 50%; transform: translateX(-50%); border-bottom-left-radius: 40px; border-bottom-right-radius: 40px;">
+    <a href="index.html" style="color: rgb(249, 196, 116); font-size: 55px; font-family: 'Great Vibes', cursive;">DangDeliciouss</a>
+  </nav>
 
+  <div class="cards-container">
+    <div class="card card1 tooltip">
+      <div class="card-content">
+        <i class="fas fa-utensils icon"></i>
+        <p style="font-size: 20px; font-weight: bold; color: rgb(250, 243, 224); font-family: 'Cinzel', serif;">Post a Recipe</p>
+      </div>
+    </div>
+    <div class="card card2 tooltip">
+      <a href="https://docs.google.com/spreadsheets/d/1DR2CUPitoE_m8PsgO3wDI-Pjeb7H2ThzK5Ty00ctTPk/edit?usp=sharing" 
+   target="_blank" 
+   style="text-decoration: none;">
+  <div class="card-content">
+    <i class="fas fa-cog icon"></i>
+    <p style="font-size: 20px; font-weight: bold; color: rgb(250, 243, 224); font-family: 'Cinzel', serif;">Manage Recipes</p>
+  </div>
+</a>
+
+    </div>
+  </div>
+
+  <!-- Modal Overlay -->
+<div id="modalOverlay" class="overlay"></div>
+
+<!-- Recipe Modal -->
+<div id="recipeModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close" aria-label="Close Modal">&times;</span>
+    <h2>Post a Recipe</h2>
+    <form id="recipeForm">
+      <label for="title">Recipe Name:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required></textarea>
+
+      <label for="ingredients">Ingredients:</label>
+      <textarea id="ingredients" name="ingredients" required></textarea>
+
+      <label for="instructions">Instructions:</label>
+      <textarea id="instructions" name="instructions" required></textarea>
+
+      <label for="image">Upload Image:</label>
+<input type="file" id="image" name="image" accept="image/*">
+<!--<img id="imagePreview" src="#" alt="Image Preview" style="display:none; max-width: 100%; margin-top: 10px;">-->
+<label for="image2">Upload Second Image:</label>
+<input type="file" id="image2" name="image2" accept="image/*">
+
+<label for="type">Type:</label>
+<select id="type" name="type" required>
+  <option value="">Select</option>
+  <option value="Veg">Veg</option>
+  <option value="Non-Veg">Non-Veg</option>
+</select>
+
+<label for="genre">Genre:</label>
+<select id="genre" name="genre" required>
+  <option value="">Select Genre</option>
+  <option value="Vegetarian">Vegetarian</option>
+  <option value="Non-Vegetarian">Non-Vegetarian</option>
+  <option value="Desserts">Desserts</option>
+  <option value="Street Foods">Street Foods</option>
+  <option value="Biriyani">Biriyani</option>
+</select>
+
+
+<label for="video">Video Link (Instagram):</label>
+<input 
+  type="url" 
+  id="video" 
+  name="video" 
+  placeholder="Paste Instagram video link here" 
+  required>
+
+
+
+
+      <input type="hidden" id="datePosted" name="datePosted" />
+
+      <button type="submit">Submit</button>
+
+      
+    </form>
+  </div>
+</div>
+
+
+  <!-- ✅ Your script should be loaded here -->
+  <script src="js/admin_panel.js"></script>
 </body>
 </html>

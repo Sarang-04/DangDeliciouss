@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,70 +26,62 @@
 </head>
 <body>
   <nav class="nav">
-    <div class="nav-center-text" style="color: rgb(249, 196, 116); font-weight: bold; font-size: 50px; font-family: 'Great Vibes', cursive;">
-      DangDeliciouss
+    <div style="color: #ded4bb; font-weight: bold; font-size: 28px; font-family: 'Great Vibes', cursive; position: absolute; left: 10%; transform: translateX(-50%);top: 10px;">
+      <h1>DangDeliciouss</h1>
     </div>
     <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Recipe</a>
-      <a href="#">About</a>
+      <a href="allrecipe.html" style="color:#fff2d3; font-size: 28px; position: absolute; left: 75%; top: 20%; transform: translateX(-50%);font-family: 'roxb', serif;">Recipe</a>
+      <i class="fa-brands fa-youtube" style="color: #fff2d3; font-size: 25px; position: absolute; left: 83%; transform: translateX(-50%);"></i>
+      <i class="fa-brands fa-facebook-f" style="color: #fff2d3; font-size: 25px; position: absolute; left: 88%; transform: translateX(-50%);"></i>
+      <a href="https://www.instagram.com/.dangdeliciouss.?igsh=ZHhrYjQwMG01ZXVx" target="_blank" style="color: #fff2d3; font-size: 25px; position: absolute; left: 93%; top: 50%; transform: translateX(-50%);">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
     </div>
   </nav>
   
 
-  <div class="logo">
-    <img src="./images/LOGO DANGD - Copy.png" alt="logo" id="site-logo">
+  <div class="logo" style="width: 220px; height: 210px; top: 100px; left: 50%; transform: translateX(-50%);">
+    <img src="images\LOGO DANGD - Copy.png" alt="logo" id="site-logo" style="width: 100%; height: 100%;">
   </div>
   
   
-  <h1 class="hero-text">where every bite <br> <span>tells a story</span></h1>
+  <h1 class="hero-text">WHERE EVERY BITE<br><br> <span>TELLS A STORY</span></h1>
   
-  <!--<button class="explore-btn">Explore</button>-->
-
-  <!--<div class="recipe-slider">
-    <div class="recipe-card">
-      <img src="./images/recipe1.jpg" alt="Recipe 1">
-      <h3>Delicious Dish 1</h3>
-      <p>Short description of the recipe...</p>
-    </div>
-    <div class="recipe-card">
-      <img src="./images/recipe2.jpg" alt="Recipe 2">
-      <h3>Delicious Dish 2</h3>
-      <p>Short description of the recipe...</p>
-    </div>
-  </div>
-
-  <div class="categories">
-    <div class="category-box">Vegetarian</div>
-    <div class="category-box">Desserts</div>
-    <div class="category-box">Quick Meals</div>
-  </div>-->
+ 
   <script src="js/index.js"></script>
   <script type="module" src="js/login.js"></script>
 
 
   <div class="footer"></div>
+  <div class="saw_box" style="position: absolute; bottom:-130px; left: 50%; transform: translateX(-50%); width: 100%; height: 80px; background-color: rgb(255, 252, 196); clip-path: polygon(
+    0 15%, 5% 0, 10% 15%, 15% 0, 20% 15%,
+    25% 0, 30% 15%, 35% 0, 40% 15%,
+    45% 0, 50% 15%, 55% 0, 60% 15%,
+    65% 0, 70% 15%, 75% 0, 80% 15%,
+    85% 0, 90% 15%, 95% 0, 100% 15%, 100% 100%, 0 100%
+  ); padding-bottom: 130px;
+  "></div>
   <div class="rect-box">
-    <div class="rect1" style="position: absolute; top: 150px; width: 1300px;
+    <div class="rect1" style="position: absolute; top: 50px; width: 1300px;
      height: 550px; z-index: -1; left: 195px; border-bottom-left-radius:40px; 
      border-bottom-right-radius:0px; border-top-left-radius: 0px; border-top-right-radius: 40px;"></div>
-     <h1 class="recipe-title">Latest Recipes</h1>
+     <h1 class="recipe-title">Life's short. Eat something "DangDeliciouss".</h1>
      <h1 class="rec-2title">Hungry..?</h1>
      <h1 class="dish1"></h1>  <!-- This will be updated dynamically -->
 
-     <a href="recipes.html" class="dive-in-btn">Dive in</a>
-     <a href="all-recipes.html" class="all-rec-btn"><i class="fas fa-utensils"></i> View All Recipes</a>
+     <a href="recipe.html" class="dive-in-btn" id="dive-btn">Dive in</a>
+     <a href="allrecipe.html" class="all-rec-btn"><i class="fas fa-utensils"></i> View All Recipes</a>
      <div class="recipe-latest1"></div>
      <div class="recipe-latest2"></div>
      
      <!-- Next & Prev Buttons -->
-     <div class="next-btn" style="position: absolute; top: 43%; left: 1430px; 
+     <div class="next-btn" style="position: absolute; top: 34%; left: 1430px; 
      transform: translateY(-50%); writing-mode: vertical-rl; text-orientation: upright; 
-     font-size: 15px; color: rgb(60,34,21); cursor: pointer;">next</div>
+     font-size: 15px; color: rgb(60,34,21); cursor: pointer;font-family: 'roxb', serif;font-weight: bold;">NEXT</div>
      
-     <div class="prev-btn" style="position: absolute; top: 43%; right: 1430px; 
+     <div class="prev-btn" style="position: absolute; top: 34%; right: 1430px; 
      transform: translateY(-50%); writing-mode: vertical-rl; text-orientation: upright; 
-     font-size: 15px; color: rgb(60,34,21); cursor: pointer;">prev</div>
+     font-size: 15px; color: rgb(60,34,21); cursor: pointer;font-family: 'roxb', serif;font-weight: bold;">PREV</div>
 
      
     </div>
@@ -97,24 +90,130 @@
   </div>
 
  <!--circles category--> 
-<div class="rect-box2"></div>
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; max-width: 100%; gap: 40px; flex-wrap: wrap; margin-top: 1100px;">
-  <div class="food-card" style="background-image: url('./images/photo_2025-03-05_20-44-18.jpg');">
-    <p>NON VEG</p>
+<div class="rect-box2">
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: auto;
+    }
+  
+    .box {
+      position: relative;
+      width: 250px;
+      height: 380px;
+      border-radius: 12px;
+      background-color: #867c70; /* default bg, will override */
+      overflow: visible; /* so circle can overflow */
+    }
+  
+    .circle-img {
+      position: absolute;
+      top: -75px;  /* move up half circle height (circle 150px / 2) */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+  </style>
+  
+  <div class="container">
+    <div class="box" style="background-color: #390517; border: 4px solid #9e7684; border-radius: 1px;" onclick="window.location.href='veg.html'">
+      <p style="font-size: 30px; position: absolute; top: 140px; left: 50%; transform: translateX(-50%); color: 	#FFffff; font-weight: normal; font-family: 'roxb', serif;">Vegetarian</p>
+      <p style="font-size: 15px; position: absolute; top: 210px; left: 50%; transform: translateX(-50%); color: white; font-weight: normal; font-family: 'roxb', serif;text-align: justify;width: 88%;word-spacing: normal;letter-spacing: normal;">Cooked with care, seasoned with tradition. These vegetarian delights will leave you full, happy, and craving more.</p>
+      <div class="circle-img" style="background-image: url('images/photo_2025-03-05_20-44-20.jpg'); border-radius: 50%; width: 180px; height: 180px;"></div>
+    </div>
+    <div class="box" style="background-color: #a38560; border: 4px solid #b8a289; border-radius: 1px;" onclick="window.location.href='desserts.html'">
+      <p style="font-size: 30px; position: absolute; top: 140px; left: 50%; transform: translateX(-50%); color: white; font-weight: normal; font-family: 'roxb', serif;">Desserts</p>
+      <p style="font-size: 15px; position: absolute; top: 210px; left: 50%; transform: translateX(-50%); color: white; font-weight: normal; font-family: 'roxb', serif;text-align: justify;width: 89%;word-spacing: normal;letter-spacing: normal;">Indulge in our delectable desserts, where every bite is a burst of flavors and textures. From rich chocolate to sweet cream, these treats are sure to satisfy your sweet tooth.</p>
+      <div class="circle-img" style="background-image: url('images/photo_2025-03-05_20-44-22.jpg'); border-radius: 50%; width: 180px; height: 180px;"></div>
+    </div>
+    <div class="box" style="background-color: #16302b; border: 4px solid #5f827b; border-radius: 1px;" onclick="window.location.href='nonveg.html'">
+      <p style="font-size: 30px; position: absolute; top: 140px; left: 50%; transform: translateX(-50%); color: white; font-weight: normal; font-family: 'roxb', serif;white-space: nowrap;">Non Vegetarian</p>
+      <p style="font-size: 15px; position: absolute; top: 210px; left: 50%; transform: translateX(-50%); color: white; font-weight: normal; font-family: 'roxb', serif;text-align: justify;width: 89%;word-spacing: normal;letter-spacing: normal;">From sizzling grills to slow-cooked stews, these non-veg delights offer a feast of textures and tastes that meat lovers adore.</p>
+      <div class="circle-img" style="background-image: url('images/photo_2025-03-05_20-44-18.jpg'); border-radius: 50%; width: 180px; height: 180px;"></div>
+    </div>
+    <div class="box" style="background-color: #5e392b; border: 4px solid #9e7684; border-radius: 1px;" onclick="window.location.href='street.html'">
+      <p style="font-size: 30px; position: absolute; top: 140px; left: 50%; transform: translateX(-50%); color: white; font-weight: normal; font-family: 'roxb', serif; white-space: nowrap;">Street Foods</p>
+      <p style="font-size: 15px; position: absolute; top: 210px; left: 50%; transform: translateX(-50%); color: white; font-weight: normal; font-family: 'roxb', serif;text-align: justify;width: 89%;word-spacing: normal;letter-spacing: normal;">Savor the authentic tastes of Indian street food, where every bite offers a blend of spices, textures, and vibrant colors — a true feast for the senses.</p>
+      <div class="circle-img" style="background-image: url('images/photo_2025-03-05_20-44-21.jpg'); border-radius: 50%; width: 180px; height: 180px;"></div>
+    </div>
+    <div class="box" style="background-color: #061813; border: 4px solid #36403d; border-radius: 1px;" onclick="window.location.href='biriyani.html'">
+      <p style="font-size: 30px; position: absolute; top: 140px; left: 50%; transform: translateX(-50%); color: white; font-weight: normal; font-family: 'roxb', serif; white-space: nowrap;">Biriyani</p>
+      <p style="font-size: 15px; position: absolute; top: 210px; left: 50%; transform: translateX(-50%); color: white; font-weight: normal; font-family: 'roxb', serif;text-align: justify;width: 89%;word-spacing: normal;letter-spacing: normal;">Bursting with spices and aroma, biriyani is more than a dish — it’s an experience that unites bold flavors and centuries of culinary heritage on your plate.</p>
+      <div class="circle-img" style="background-image: url('images/photo_2025-06-04_21-23-14.jpg'); border-radius: 50%; width: 180px; height: 180px;"></div>
+    </div>
   </div>
-  <div class="food-card" style="background-image: url('./images/photo_2025-03-05_20-44-20.jpg');">
-    <p>VEG</p>
+
+  <div id="lottie-container"></div>
+
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-container'),
+      path: 'images/animation.json',
+      renderer: 'svg',
+      loop: true,
+      autoplay: true
+    });
+  </script>
+  <style>
+    #lottie-container {
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 505px;
+      left: 65%;
+      transform: translate(-50%, -50%);
+      background: #fffee6;
+      border-radius: 100%;
+    }
+  </style>
+  <div class="search-bar" style="position: relative;">
+    <input type="text" id="search-input" placeholder="Find your perfect dish..." autocomplete="off" />
+    <button id="search-btn" onclick="performSearch()">Search</button>
+    <ul id="suggestions-list" class="suggestions-list"></ul>
   </div>
-  <div class="food-card" style="background-image: url('./images/photo_2025-03-05_20-44-21.jpg');">
-    <p>STREET FOODS</p>
-  </div>
-  <div class="food-card" style="background-image: url('./images/photo_2025-03-05_20-44-22.jpg');">
-    <p>SWEETS</p>
-  </div>
-  <div class="food-card" style="background-image: url('./images/photo_2025-03-05_20-44-23.jpg');">
-    <p>BIRIYANI</p>
-  </div>
+  
+  
+  
+  
 </div>
+
+<div class="about_box_rect">
+  <h1 style="color: #ffffff; font-weight: normal; font-size: 50px; font-family: 'bodoni', serif; position: absolute; left: 15%; transform: translateX(-50%);top: 140px;">About The Chef</h1>
+  <div style="color: #ffffff; font-weight: normal; font-size: 20px; font-family: 'roxb', serif; position: absolute; top: 290px; height: 200px; width: 30%; left: 5%; text-align: justify;">
+    <p>Hi, I’m Sidra! Being in the kitchen and cooking has always been something I love — it’s my happy place where creativity comes alive. I believe that every dish tells a story, and for me, food isn’t just about taste; it’s about creating art on a plate. It’s about the process. The calm that comes with chopping, mixing, waiting — all of it.</p>
+  
+    <p>My first kitchen experiment was when I was little. It was a simple bread and cheese pizza. It was far from perfect — actually, kind of a mess. But I remember how much everyone appreciated it anyway. That small moment of encouragement meant everything to me. It made me want to try again, learn more, and keep going. What started as a one-time experiment slowly became something I genuinely loved doing.</p>
+  
+    <p>Even though cooking has always been a part of my life, <strong>Dang Delicious</strong>, my blog — officially started in 2020. Here, I’ll be sharing all my favorite recipes straight from my kitchen to yours.</p>
+  </div>
+  
+  <img src="images\shining.png" style="width: 45px; height: 45px; position: absolute; top: 105px; left: 27%; transform: translateX(-50%); border-top-left-radius: 20px; border-bottom-right-radius: 20px;;"/>
+  <img src="images\serving-dish.png" style="width: 120px; height: 120px; position: absolute; top: 450px; left: 45%; transform: translateX(-50%); border-top-left-radius: 20px; border-bottom-right-radius: 20px;;"/>
+  <i class="fa-brands fa-youtube" style="color: #ffffff; font-size: 25px; position: absolute; top: 60%; left: 97.4%; transform: translateX(-50%);"></i>
+  <i class="fa-brands fa-facebook-f" style="color: #ffffff; font-size: 25px; position: absolute; top: 50%; left: 97.2%; transform: translateX(-50%);"></i>
+  <a href="https://www.instagram.com/.dangdeliciouss.?igsh=ZHhrYjQwMG01ZXVx" target="_blank" style="color: #ffffff; font-size: 25px; position: absolute; top: 40%; left: 97.3%; transform: translateX(-50%);">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <img src="images\pexels-yente-van-eynde-1263034-2403391.jpg" style="width: 600px; height: 800px; position: absolute; top:0%; left: 75%; transform: translateX(-50%);"/>
+</div>
+
+<div class="colab-box">
+  <h1 style="color: #000000; font-weight: normal; font-size: 2.5rem; font-family: 'roxb', serif; position: absolute; left: 50%; transform: translateX(-50%);top: 10%">Brands i've worked with:</h1>
+  <h1 style="color: #000000; font-weight: normal; font-size: 1.8rem; font-family: 'roxb', serif; position: absolute; left: 50%; transform: translateX(-50%);top: 55%">NUTRICOOK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MEYER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MONSOON&nbsp;&nbsp;HARVEST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FORTUNE&nbsp;&nbsp;FOODS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CALIFORNIA&nbsp;&nbsp;WALNUTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NUTRIBULLET</h1>
+</div>
+
+
+
+
+
 
 <!-- Admin Login Modal -->
 <div id="admin-login-modal" style="display:none;" class="modal-overlay">
@@ -155,5 +254,87 @@
   </div>
 </div>
 </div>
+
+<script>
+  window.onload = function () {
+    let allRecipes = [];
+  
+    const searchInput = document.getElementById('search-input');
+    const suggestionsList = document.getElementById('suggestions-list');
+  
+    // ✅ Fetch recipes
+    fetch('https://script.google.com/macros/s/AKfycbzHbmZc7dgAw8RQ-E1ZwK7_GnRGxFi_9oUA_TdlJLROCw5IFSFr3nMOANEb7z_nW2y3/exec')
+      .then(res => res.json())
+      .then(data => {
+        allRecipes = data;
+        console.log("Fetched recipes:", allRecipes); // ✅ Debug
+      })
+      .catch(err => {
+        console.error("Error fetching recipes:", err);
+      });
+  
+    // ✅ Show suggestions as dropdown
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase().trim();
+      suggestionsList.innerHTML = '';
+  
+      if (!query || allRecipes.length === 0) return;
+  
+      const matches = allRecipes.filter(recipe =>
+        recipe["TITLE"] && recipe["TITLE"].toLowerCase().includes(query)
+      );
+  
+      if (matches.length === 0) {
+        const li = document.createElement('li');
+        li.textContent = "No matches found.";
+        suggestionsList.appendChild(li);
+        return;
+      }
+  
+      matches.forEach(recipe => {
+        const li = document.createElement('li');
+        li.textContent = recipe["TITLE"];
+        li.addEventListener('click', () => {
+          const encoded = encodeURIComponent(recipe["TITLE"]);
+          window.location.href = `recipe.html?title=${encoded}`;
+        });
+        suggestionsList.appendChild(li);
+      });
+    });
+  
+    // ✅ Button / Enter to search exact match
+    window.performSearch = function () {
+      const query = searchInput.value.toLowerCase().trim();
+  
+      const match = allRecipes.find(recipe =>
+        recipe["TITLE"] && recipe["TITLE"].toLowerCase() === query
+      );
+  
+      if (match) {
+        const encoded = encodeURIComponent(match["TITLE"]);
+        window.location.href = `recipe.html?title=${encoded}`;
+      } else {
+        alert("No exact match found. Please select from the dropdown.");
+      }
+    };
+  
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        performSearch();
+      }
+    });
+  
+    // ✅ Hide dropdown on outside click
+    document.addEventListener('click', (e) => {
+      if (!document.querySelector('.search-bar').contains(e.target)) {
+        suggestionsList.innerHTML = '';
+      }
+    });
+  };
+  </script>
+  
+  
+  
+
 </body>
 </html>

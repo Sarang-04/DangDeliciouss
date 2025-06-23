@@ -1,0 +1,367 @@
+@font-face {
+    font-family: 'roxb';
+    src: url('../images/Roxborough CF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'billing';
+    src: url('../images/Billing Lottre-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'abigail';
+    src: url('../images/Abigail.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+html,
+body {
+  font-family: Raleway, sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* allow vertical scroll, block sideways scroll */
+}
+
+
+.search-box {
+  /* UPDATED: Changed location and background color */
+  font-size: 10px;
+  border: solid 0.3em #fff2d3;
+  background-color: #fff2d3;
+  display: inline-block;
+  position: absolute;
+  left: 85%;
+  transform: translateX(-50%);
+  border-radius: 3.5em;
+  box-sizing: border-box;
+}
+
+.search-box input[type="text"] {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    width: 30px; /* ⬅️ Slightly larger to accommodate padding and show icon */
+    height: 30px;
+    padding: 5px 15px 5px 15px; /* ⬅️ Balanced padding */
+    border: none;
+    box-sizing: border-box;
+    border-radius: 45px;
+    background-color: rgb(98, 56, 35);
+    color: #fff2d3;
+    transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 150ms;
+  }
+  
+  
+  
+
+.search-box input[type="text"]:focus {
+  outline: none;
+}
+
+.search-box input[type="text"]:focus,
+.search-box input[type="text"]:not(:placeholder-shown) {
+  /* UPDATED: Expanded width when focused */
+  width: 22em;
+  transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.search-box input[type="text"]:focus + button[type="reset"],
+.search-box input[type="text"]:not(:placeholder-shown) + button[type="reset"] {
+  transform: rotate(-45deg) translateY(0);
+  transition: transform 150ms ease-out 800ms;
+}
+
+.search-box input[type="text"]:focus + button[type="reset"]:after,
+.search-box input[type="text"]:not(:placeholder-shown) + button[type="reset"]:after {
+  opacity: 1;
+  transition:
+    top 150ms ease-out 950ms,
+    right 150ms ease-out 950ms,
+    opacity 150ms ease 950ms;
+}
+
+.search-box button[type="reset"] {
+    background-color: transparent;
+    width: 1.9em;
+    height: 1.9em;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  
+    /* ✅ Fix vertical and horizontal alignment */
+    top: calc(3.5em / 2 - 1.9em / 2);
+    right: 0.4em;
+  
+    /* ✅ Fix tail offset to center better */
+    transform: rotate(-45deg) translateY(1.5em);
+  
+    transition: transform 150ms ease-out 150ms;
+    color: #fff2d3;
+  }
+  
+
+.search-box button[type="reset"]::before,
+.search-box button[type="reset"]::after {
+  content: "";
+  background-color: #fff2d3;  /* UPDATED: Cross color */
+  width: 0.2em;
+  height: 1.2em;              /* Increased cross height */
+  position: absolute;
+  /*
+   * Change the size and location of the cross here
+   */
+  right: 0.3em;
+  top: 0.3em;
+}
+
+.search-box button[type="reset"]::after {
+  transform: rotate(90deg);
+  opacity: 0;
+  transition:
+    transform 150ms ease-out,
+    opacity 150ms ease-out;
+}
+
+.rect_m {
+    margin-top: 120px;
+    position: absolute;
+    top: 8%;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 69%;
+    height: 70%;
+    background-color: #e1c195;
+}
+
+.image-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 400px; /* or any height you want */
+}
+
+.img1 {
+  position: absolute;
+  top: 15%;
+  left: 13%;
+  transform: translate(-50%, 0);
+  width: 430px;
+  max-height: 550px;
+  object-fit: cover;
+  box-shadow: 3px 3px 3px #272727;
+}
+
+
+.name {
+  position: absolute;
+  top: 12%;
+  left: 63%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 40%;
+  font-family: 'roxb', serif;
+  font-size: 60px;
+  color: #241308;
+  font-weight: bold;
+}
+
+.description {
+  position: absolute;
+  top:40%;
+  left: 60%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 40%;
+  font-family: 'roxb', serif;
+  font-size: 30px;
+  color: #241308;
+}
+
+.rect_m2 {
+    margin-top: 120px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 1000px;
+    background-color: #1d1917;
+}
+
+.ingre-head {
+    position: absolute;
+    top: 7%;
+    left: 8%;
+    width: 69%;
+    height: 70%;
+    color: #fff2d3;
+    font-family: 'roxb', serif;
+    font-size: 70px;
+}
+
+.img2 {
+  position: absolute;
+  top: 20%;
+  left: 88%;
+  width: 430px;
+  max-height: 550px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+.ingredients {
+  margin-top: 10%;
+  padding: 30px;
+  width: 50%;
+  height: 700px; /* set height or max-height */
+  margin-left: 8%;
+  background-color: #1d1917;
+  font-family: 'roxb', serif;
+  color: #fff2d3;
+  line-height: 1.4;
+  overflow-y: auto; /* scrolls if content overflows */
+  box-sizing: border-box;
+  border-radius: 12px; /* optional: rounded look */
+  font-size: 20px;
+
+}
+
+.ingredient-text {
+  width: 100%;
+  word-wrap: break-word;
+  white-space: pre-line; /* respects line breaks */
+}
+
+
+.insta-url {
+  margin-top: 120px;
+  position: absolute;
+  left: 50%;
+  top: 200%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 15%;
+  background-color: #2a201b;
+}
+
+.insta-text {
+    font-family: 'roxb', serif;
+    font-size: 50px;
+    color: #fff2d3;
+    position: absolute;
+    left: 60%;
+    top: 30%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.rect_m3 {
+    margin-top: 120px;
+    position: absolute;
+    top: 215%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: #1d1917;
+}
+
+.Direct-head {
+  position: absolute;
+  top: 7%;
+  left: 8%;
+  width: 69%;
+  height: 70%;
+  color: #fff2d3;
+  font-family: 'roxb', serif;
+  font-size: 70px;
+}
+
+.directions {
+  margin-top: 10%;
+  padding: 30px;
+  width: 90%;
+  height: 700px; /* set height or max-height */
+  margin-left: 8%;
+  background-color: #1d1917;
+  font-family: 'roxb', serif;
+  color: #fff2d3;
+  line-height: 1.4;
+  overflow-y: auto; /* scrolls if content overflows */
+  box-sizing: border-box;
+  border-radius: 12px; /* optional: rounded look */
+  font-size: 20px;
+
+}
+
+.direction-text {
+  width: 100%;
+  word-wrap: break-word;
+  white-space: pre-line; /* respects line breaks */
+}
+
+.colab-box {
+  position: absolute;
+  top: 325%;
+  left:50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 15%;
+  background-color:#e1c195;
+}
+
+.suggestions-list {
+  position: absolute;
+  top: 4.5em; /* adjust if needed */
+  left: 85%;
+  transform: translateX(-50%);
+  width: 22em;
+  max-height: 200px;
+  background: #fff2d3;
+  border: 2px solid #744a35;
+  border-radius: 0.5em;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+}
+
+.suggestions-list li {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #744a35;
+  cursor: pointer;
+  border-bottom: 1px solid #e0c7a3;
+}
+
+.suggestions-list li:last-child {
+  border-bottom: none;
+}
+
+.suggestions-list li:hover {
+  background-color: #f7e6d3;
+  color: #5c3828;
+}
