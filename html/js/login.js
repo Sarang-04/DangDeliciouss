@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       signInWithEmailAndPassword(auth, email, password)
         .then(() => {
           // ✅ Redirect to admin panel on successful login
-          window.location.href = "admin_panel.html";
+          window.location.href = "../html/admin_panel.html";
         })
         .catch((error) => {
           alert("Login failed: " + error.message);

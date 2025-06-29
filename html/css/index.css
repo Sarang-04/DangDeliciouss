@@ -117,7 +117,7 @@ body {
 
 .rect-box {
   position: absolute;
-  bottom: -127.3%;
+  bottom: -145%;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -263,8 +263,8 @@ body {
 
 .recipe-latest1 {
   position: absolute;
-  top: 130px;
-  right: 54%;
+  top: 13%;
+  right: 56%;
   transform: translateX(-50%);
   width: 330px;
   height: 400px;
@@ -279,8 +279,8 @@ body {
 }
 .recipe-latest2 {
   position: absolute;
-  top: 130px;
-  left: 1250px;
+  top: 13%;
+  left: 78%;
   transform: translateX(-50%);
   width: 330px;
   height: 400px;
@@ -296,17 +296,18 @@ body {
 
 .rect1 { /*some of the styles is in index.html*/
   position: absolute;
-  top: 100px;
-  right: 300px;
-  width: 1000px;
-  height: 550px;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 86%;
+  height: 52%;
   background-color: rgb(246, 210, 163); 
 }   
 
 .recipe-title {
   position: absolute;
-  top: -87px;
-  left: 24%;
+  top: -7%;
+  left: 22%;
   font-size: 46px;
   font-weight: normal;
   font-family: 'roxb', sans-serif;
@@ -318,7 +319,7 @@ body {
 .rec-2title {
   position: absolute;
   top: 100px;
-  left: 46%;
+  left: 44%;
   font-size: 56px;
   font-weight: normal;
   font-family: 'billing', cursive;
@@ -329,8 +330,9 @@ body {
 .dish1 {
   position: absolute;
   top: 240px;
-  left: 40%; /* Adjust if needed */
-  font-size: 26px;
+  width: 30%;
+  left: 35%; /* Adjust if needed */
+  font-size: 24px;
   font-weight: normal;
   font-family: 'roxb', cursive;
   color: rgb(2, 22, 25);
@@ -373,7 +375,7 @@ body {
 
 .rect-box2 {
   position: absolute;
-  top: 2700px;
+  top: 320%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -434,7 +436,7 @@ body {
 
 .about_box_rect {
   position: absolute;
-  top: 280%;
+  top: 305%;
   left:50%;
   transform: translateX(-50%);
   width: 100%;
@@ -444,7 +446,7 @@ body {
 
 .colab-box {
   position: absolute;
-  top: 366.2%;
+  top: 400.9%;
   left:50%;
   transform: translateX(-50%);
   width: 100%;
