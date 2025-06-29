@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(() => {
           // ✅ Redirect to admin panel on successful login
           window.location.href = "/DangDeliciouss/html/admin_panel.html";
+
         })
         .catch((error) => {
           alert("Login failed: " + error.message);
