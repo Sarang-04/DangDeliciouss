@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   nextBtn.addEventListener("click", () => {
-    if (latestRecipes.length === 0) return;
+    if (latestRecipes.length === 0) return; 
     currentIndex = (currentIndex + 1) % latestRecipes.length;
     updateSlide();
   });
