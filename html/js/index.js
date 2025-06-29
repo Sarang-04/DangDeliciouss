@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     recipeLatest1.style.backgroundImage = `url('${image}')`;
     recipeLatest2.style.backgroundImage = `url('${image}')`;
     dishText.innerHTML = description;
-    if (diveInBtn) diveInBtn.href = `recipe.html?title=${encoded}`;
+    if (diveInBtn) diveInBtn.href = `html/recipe.html?title=${encoded}`;
   }
 
   nextBtn.addEventListener("click", () => {
